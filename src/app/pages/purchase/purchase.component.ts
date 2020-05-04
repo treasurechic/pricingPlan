@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UiService } from '../../../ui.service';
 import { ActivatedRoute } from '@angular/router';
-import {} from '../../plans.json';
 
 @Component({
   selector: 'app-purchase',
@@ -10,8 +9,27 @@ import {} from '../../plans.json';
 })
 export class PurchaseComponent implements OnInit {
 
-  
+  detail;
+  details;
   getParam: any;
+  price;
+
+  json_data = [
+    {
+       "name":"bronze",
+       "price":"500/m"
+    },
+ 
+    {
+       "name":"silver",
+       "price":"1000/m"
+    },
+ 
+    {
+       "name":"gold",
+       "price":"2000/m"
+    }
+ ]
 
   constructor(private uiservice: UiService, private activatedRouter: ActivatedRoute) {
     
@@ -21,7 +39,18 @@ export class PurchaseComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.getParam)
-
+    let plan = this.getParam
+    console.log(plan) 
+     this.details = {}   
+    this.json_data.forEach(data => {
+      if(data.name == plan){
+        this.details = data      
+      }
+    })
+    console.log(this.details)    
+    // this.detail = this.json_data.filter(each_plan => each_plan.name == plan)
+    // this.price = this.detail.price 
+    // console.log(this.price)
   }
 
   completeOrder(){
@@ -29,3 +58,4 @@ export class PurchaseComponent implements OnInit {
   }
 
 }
+
