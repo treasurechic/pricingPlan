@@ -1,0 +1,230 @@
+
+@font-face {
+  font-family: "Museo-bd";
+  src: url("./assets/Fonts/MuseoSans_700.otf");
+}
+@font-face {
+  font-family: "Museo-md";
+  src: url("./assets/Fonts/MuseoSans_500.otf");
+}
+@font-face {
+  font-family: "Museo-lt";
+  src: url("./assets/Fonts/MuseoSans-300.otf");
+}
+
+*body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Museo-md";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f9f9fb;
+}
+.text-green {
+  color: #41ada0;
+}
+.text-light-blue {
+  color: #9eceff;
+}
+.text-black {
+  color: #282828 !important;
+}
+.text-grey {
+  color: #979797 !important;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font12 {
+  font-size: 12px;
+}
+.font20 {
+  font-size: 20px !important;
+}
+.font21 {
+  font-size: 21px !important;
+}
+.font48{
+  font-size: 48px;
+}
+.font18 {
+  font-size: 18px !important;
+}
+.font36 {
+  font-size: 36px !important;
+}
+.font32{
+  font-size: 32px !important;
+}
+.font30 {
+  font-size: 30px !important;
+}
+.font64 {
+  font-size: 60px !important;
+}
+.font58 {
+  font-size: 58px !important;
+}
+.font24 {
+  font-size: 24px !important;
+}
+.font31 {
+  font-size: 31px !important;
+}
+.ml-100 {
+  margin-left: 100px;
+}
+.font-light {
+  font-weight: 300;
+  font-family: "Museo-lt" !important;
+}
+.bold {
+  font-weight: 700;
+}
+.border-radius {
+  border-radius: 6px;
+}
+.box-shadow {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.light {
+  font-weight: 300;
+}
+.font-lato {
+  font-family: "lato" !important;
+}
+.font-lato-italic {
+  font-style: italic;
+  font-family: "lato" !important;
+}
+.font-bold {
+  font-weight: 500;
+  font-family: "Museo-bd" !important;
+}
+.bg-grey {
+  background: #f2f2f2;
+}
+.bg-dark-grey{
+  background: #CACDD2;
+}
+.bg-green {
+  background: #41ada0;
+}
+.bg-white {
+  background: white !important;
+}
+.bg-black {
+  background: #282828 !important;
+}
+.bg-blue {
+  background: #24273e !important;
+}
+.bg-red {
+  background: #F58327 !important;
+}
+p:focus, div:focus, .btn:focus, a:focus, div:focus, button:focus, li:focus{
+    outline: none;
+}
+.p-r {
+  position: relative;
+}
+.line-under {
+  border-bottom: 1px solid #c4c4c4;
+}
+input:focus,
+.btn:active,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+textarea {
+  resize: none;
+}
+input::placeholder {
+  font-size: 14px;
+  color: #656565;
+}
+input::-moz-placeholder {
+  font-size: 14px;
+  color: #656565;
+}
+.w-90{
+  width: 90% !important;
+}
+select {
+  font-size: 14px;
+  color: #656565;
+}
+@media (max-width: 900px) {
+  .header-text h2,
+  .font64 {
+    font-size: 40px !important;
+  }
+  .sm-border {
+    border: solid 0.6px #c4c4c4;
+  }
+  .sm-p-none {
+    padding: 0 !important;
+  }
+  .sm-mt {
+    margin-top: 2rem !important;
+  }
+  .sm-dflex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sm-d-none {
+    display: none !important;
+  }
+  .sm-mt-none {
+    margin-top: 0 !important;
+  }
+  .sm-pt-none {
+    padding-top: 0 !important;
+  }
+  .sm-ml-none {
+    margin-left: 0 !important;
+  }
+  .sm-text-left {
+    text-align: left !important;
+  }
+  .sm-reverse {
+    flex-direction: column-reverse;
+  }
+}
+li {
+  list-style: none;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.price-cards {
+  border:6px solid #41ad62fa;
+  background: white;
+  border-radius: 6px;
+}
+.border-x {
+  border-right: 0.5px solid #7c7c7d;
+  border-left: 0.5px solid #7c7c7d;
+}
+.border {
+  border: solid 0.5px #c4c4c4;
+  border-radius: 6px;
+}
+.border-green{
+  border: solid 0.5px #41ADA0;
+  border-radius: 10px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,38 @@
+
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+            <a class="navbar-brand mr-5" href="#">
+                <img src="assets/img/logo-white.png" alt=""/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span>
+                <i class="fa fa-bars btn text-white font20"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <div class="d-flex align-items-center">
+                <select>
+                  <option value="categories">Categories</option>
+                  <option value="categories">Categories</option>
+                  <option value="categories">Categories</option>
+                </select>
+                <input type="text" placeholder="Search for photo and video" />
+                <i class="fa fa-search text-white input-icon"></i>
+              </div>
+              <ul class="navbar-nav text-capitalize">
+                <li class="nav-item">
+                  <a class="nav-link text-bold mr-2" routerLink='/filled-state'>Browse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-bold mr-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink='/'>License</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-bold mr-3" href="#">Upload Images</a>
+                </li>
+                <li class="nav-item ml-3" routerLink='/profile'>
+                    <img src='assets/img/profile.png'/>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
